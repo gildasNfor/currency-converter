@@ -1,8 +1,8 @@
-/* You can add global styles to this file, and also import other style files */
 html {
   height: 100%;
 }
 body {
+  background-color: tan;
   display: grid;
   place-content: center;
   height: 100%;
@@ -12,6 +12,28 @@ body {
 }
 
 .box {
+  background-color: lightblue;
+  padding: 20px;
+  text-align: center;
+  min-height: 400px;
+  outline: 1px solid black;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+input {
+  max-width: 70px;
+  margin: 10px;
+}
+
+input,
+select {
+  /* height: 30px; */
+  padding: 5px 10px;
+}
+
+.horizontal {
+  dispay: flex;
 }

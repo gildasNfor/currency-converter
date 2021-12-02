@@ -1,3 +1,4 @@
+<h1>Currency Converter</h1>
 <div class="box">
     <input (input)="takeAmount($event)" type="text" value="{{ amount }}" />
   <select (change)="setFromCurency($event)">
@@ -18,5 +19,5 @@
       {{ currency.name }}
     </option>
   </select>
-  <h1>{{ amount | currencyConverter: fromCurrency:toCurrency }}</h1>
+  <h3>{{ amount | currencyConverter: fromCurrency:toCurrency }}</h3>
 </div>
